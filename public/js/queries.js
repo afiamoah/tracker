@@ -1,21 +1,21 @@
 //PATIENT REGISTRATION QUERIES
-export const  NewPatient="insert into Patient set ?"
+export const  NewPatient="insert into patient set ?"
 export const ViewPatient="select * from  patient"
 export const DeletePatient="delete from  patient where id=?"
 export const GetPatientDetails="select * from  patient where id=?"
 export const UpdateDetails=`update patient set Name=?,gender=?,Dob=?,age=?,NHIS=?,RegNo=?,Tel=?,address=?,Region=?,District=?,Facility=? where id= ?`;
-export const DisplayAll="select * from  Patient"
-export const DisplayAllCount="select count(Name) as 'count' from  Patient"
-export const namesearch="select count(Name) as 'count'  from  Patient where name=?;select * from  Patient where name=?"
-export const  mobilesearch="select count(Name) as 'count'  from  Patient where Tel=?;select * from  Patient where Tel=?"
-export const  regsearch="select count(Name) as 'count'  from  Patient where RegNo=?;select * from  Patient where RegNo=?"
-export const PatientsReportTel="select * from Patient where Tel = ?;select count(name) as 'count' from Patient where Tel = ?"
-export const PatientsReportName="select * from Patient where name = ?;select count(name) as 'count' from Patient where name = ?"
-export const PatientsAll="select * from Patient order by name asc;select count(name) as 'count' from Patient"
+export const DisplayAll="select * from  patient"
+export const DisplayAllCount="select count(Name) as 'count' from  patient"
+export const namesearch="select count(Name) as 'count'  from  patient where name=?;select * from  patient where name=?"
+export const  mobilesearch="select count(Name) as 'count'  from  patient where Tel=?;select * from  patient where Tel=?"
+export const  regsearch="select count(Name) as 'count'  from  patient where RegNo=?;select * from  patient where RegNo=?"
+export const PatientsReportTel="select * from patient where Tel = ?;select count(name) as 'count' from patient where Tel = ?"
+export const PatientsReportName="select * from patient where name = ?;select count(name) as 'count' from patient where name = ?"
+export const PatientsAll="select * from patient order by name asc;select count(name) as 'count' from patient"
 
 
 
-//DATA CLINICAL DATA QUERIES FOR FAMILY PLANNING 
+//DATA CLINICAL DATA QUERIES FOR FAMILY pLANNING 
 export const  SaveNewItems="insert into fplanning set ?"
 export const UpdateNewItem="update fplanning set Items=?"
 export const display="select * from  fplanning"

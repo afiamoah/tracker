@@ -5,9 +5,7 @@ import { config } from "dotenv";
 import { dbconnect } from "./dbConnect.js";
 import moment from "moment/moment.js";
 import fetch from "node-fetch";
-import PDFDocument from "pdfkit"
 import fs from  "fs"
-import easyinvoice from 'easyinvoice';
 
 //QUERIES ABOUT PATIENTS REGISTRATION FOR FAMILY PLANNING
 import {
@@ -240,7 +238,7 @@ stores.post("/patient", (req, res) => {
 
 stores.get("/vp", (req, res) => {
   dbconnect.query(
-    "select count(Name) as 'count'  from  Patient;select * from  Patient",
+    "select count(Name) as 'count'  from  patient;select * from  patient",
     (err, data) => {
       if (err) {
         console.log(err);
