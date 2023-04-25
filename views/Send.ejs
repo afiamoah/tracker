@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/public/css/call.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/assets/css/media.css">
+    <link rel="stylesheet" href="/public/assets/css/mediasms.css">
+    <!-- <script>
+       var socket = io();
+       socket.on('message', function(data){document.write(data)});
+    </script> -->
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <%- include('partials/navbar') %> -->
+    <div class="main-page" id="page">
+        <form action="/Sendsms" method="post">
+ <section class="conference" id="row">
+    <div class="header">
+        <h1 id="head">SEND SMS TO CLIENT</h1>
+    </div>
+<section class="vc-page" id="sform">
+    <div class="signup">
+    <input type="text" placeholder="Enter Client number" class="search" name="Contacts" id="search">
+    </div>
+    <div class="signup">
+        <button type="submit" class="btns" id="sbtn">SEND</button>
+    </div>
+</section>
+<section style="margin-left: 10rem;" id="sms">
+    <textarea rows="15" cols="140" name="Messages" id="message">
+        WELCOME TO SDA HOSPITAL-DOMINASE YOU ARE HAVE BEEN ENROLLED NOW. 
+    </textarea>
+      
+</section>
+</section>
+</form>
+    </div>
+    <!-- <script src="/socket.io/socket.io.js"></script>  
+    <script src="public/script.js" ></script> -->
+</body>
+</html>
